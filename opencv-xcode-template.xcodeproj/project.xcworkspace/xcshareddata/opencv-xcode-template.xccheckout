@@ -12,20 +12,24 @@
 	<dict>
 		<key>568B8784E4D5027FC07006255CAA67FAB9A7769C</key>
 		<string>https://github.com/gchoi/OpenCV-with-Xcode.git</string>
+		<key>9EE13EA46F643C966F8800DE22F76FFE009800C6</key>
+		<string>https://github.com/gchoi/OpenCV-Xcode-Template.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>opencv-xcode-template/opencv-xcode-template.xcodeproj</string>
+	<string>opencv-xcode-template.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>568B8784E4D5027FC07006255CAA67FAB9A7769C</key>
 		<string>../../..</string>
+		<key>9EE13EA46F643C966F8800DE22F76FFE009800C6</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gchoi/OpenCV-with-Xcode.git</string>
+	<string>https://github.com/gchoi/OpenCV-Xcode-Template.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>568B8784E4D5027FC07006255CAA67FAB9A7769C</string>
+	<string>9EE13EA46F643C966F8800DE22F76FFE009800C6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>568B8784E4D5027FC07006255CAA67FAB9A7769C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Examples</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9EE13EA46F643C966F8800DE22F76FFE009800C6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>opencv-xcode-template</string>
 		</dict>
 	</array>
 </dict>
