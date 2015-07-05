@@ -33,6 +33,20 @@ int main(int argc, const char * argv[]) {
     
     std::cout << "Red: " << (int)*red << " , Green: " << (int)*green << " , Blue: " << (int)*blue << std::endl;
     
+    // change colors
+    for( int i = 10 ; i < 20 ; i++ ) {
+        for( int j = 10 ; j < 20 ; j++ ) {
+            image.at<cv::Vec3b>(j,i)[0]= 255;
+            image.at<cv::Vec3b>(j,i)[1]= 255;
+            image.at<cv::Vec3b>(j,i)[2]= 255;
+        }
+    }
+    
+    // display image
+    cv::namedWindow( "Image" );
+    cv::imshow( "Image", image );
+    
+    cv::waitKey( 10000 );
     
     return 0;
 }
