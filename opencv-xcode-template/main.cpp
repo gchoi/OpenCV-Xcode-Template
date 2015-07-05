@@ -11,24 +11,28 @@
 
 int main(int argc, const char * argv[]) {
     // Read an image
-    cv::Mat image = cv::imread("../../../../../res/lenna.png");
+    cv::Mat image = cv::imread("../../../../../res/gchoi_blurred.png");
     
     int nRow = image.rows;
     int nCol = image.cols;
     
-    std::cout << "nRow : " << nRow << std::endl;
-    std::cout << "nCOl : " << nCol << std::endl;
-    
     if( nRow == 0 && nCol == 0 )
         return 0;
     
-    // Set name of the window
-    cv::namedWindow("My Image");
+    uchar *blue, *green, *red;
     
-    // Show the window
-    cv::imshow("My Image", image);
+    // get (j, i) pixel
+    int i = 1;
+    int j = 0;
     
-    cv::waitKey(5000);
+    if( i > nCol || j > nRow ) return 0;
+    
+    blue	= image.data + j*image.step + i*image.elemSize() + 0;
+    green	= image.data + j*image.step + i*image.elemSize() + 1;
+    red     = image.data + j*image.step + i*image.elemSize() + 2;
+    
+    std::cout << "Red: " << (int)*red << " , Green: " << (int)*green << " , Blue: " << (int)*blue << std::endl;
+    
     
     return 0;
 }
