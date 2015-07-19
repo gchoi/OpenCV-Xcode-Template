@@ -49,7 +49,7 @@ int main(int argc, const char * argv[]) {
     float chRed, chGreen, chBlue;
     float fValRed, fValGreen, fValBlue;
     
-    int nIterations = 2;
+    int nIterations = 3;
     
     // Gaussian blur
     for( int nIter = 0 ; nIter < nIterations ; nIter++ ) {
@@ -94,11 +94,11 @@ int main(int argc, const char * argv[]) {
     
     // creates window
     cv::namedWindow( "Image Original", 1 );
-    cv::namedWindow( "Image Copied", 1 );
+    cv::namedWindow( "Image Blurred", 1 );
     
     // show stuff
     cv::imshow( "Image Original", image );
-    cv::imshow( "Image Copied", image_copy );
+    cv::imshow( "Image Blurred", image_copy );
     
     // Wait until user press some key
     cv::waitKey();
